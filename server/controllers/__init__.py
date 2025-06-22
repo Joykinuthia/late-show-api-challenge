@@ -1,0 +1,11 @@
+# This file can be used to initialize the controllers package
+from .guest_controller import guest_bp
+from .episode_controller import episode_bp
+from .appearance_controller import appearance_bp
+from .auth_controller import auth_bp
+
+def register_blueprints(app):
+    app.register_blueprint(guest_bp)
+    app.register_blueprint(episode_bp)
+    app.register_blueprint(appearance_bp)
+    app.register_blueprint(auth_bp)
