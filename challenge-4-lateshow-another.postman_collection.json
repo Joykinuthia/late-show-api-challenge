@@ -1,12 +1,12 @@
 {
   "info": {
-    "_postman_id": "lateshow-api-challenge-collection-alt",
-    "name": "Late Show API Challenge (Alt User)",
+    "_postman_id": "lateshow-api-challenge-collection-another",
+    "name": "Late Show API Challenge (Another User)",
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
   },
   "item": [
     {
-      "name": "Register User (alt)",
+      "name": "Register User (another)",
       "request": {
         "method": "POST",
         "header": [
@@ -14,7 +14,7 @@
         ],
         "body": {
           "mode": "raw",
-          "raw": "{\n  \"username\": \"altuser\",\n  \"password\": \"altpass123\"\n}"
+          "raw": "{\n  \"username\": \"anotheruser\",\n  \"password\": \"anotherpass456\"\n}"
         },
         "url": {
           "raw": "http://localhost:5000/register",
@@ -26,7 +26,7 @@
       }
     },
     {
-      "name": "Login User (alt)",
+      "name": "Login User (another)",
       "request": {
         "method": "POST",
         "header": [
@@ -34,7 +34,7 @@
         ],
         "body": {
           "mode": "raw",
-          "raw": "{\n  \"username\": \"altuser\",\n  \"password\": \"altpass123\"\n}"
+          "raw": "{\n  \"username\": \"anotheruser\",\n  \"password\": \"anotherpass456\"\n}"
         },
         "url": {
           "raw": "http://localhost:5000/login",
@@ -85,7 +85,7 @@
       }
     },
     {
-      "name": "Create Appearance (Protected, alt)",
+      "name": "Create Appearance (Protected, another)",
       "request": {
         "method": "POST",
         "header": [
@@ -94,7 +94,7 @@
         ],
         "body": {
           "mode": "raw",
-          "raw": "{\n  \"rating\": 4,\n  \"guest_id\": 1,\n  \"episode_id\": 1\n}"
+          "raw": "{\n  \"rating\": 3,\n  \"guest_id\": 1,\n  \"episode_id\": 1\n}"
         },
         "url": {
           "raw": "http://localhost:5000/appearances",
@@ -106,7 +106,7 @@
       }
     },
     {
-      "name": "Delete Episode (Protected, alt)",
+      "name": "Delete Episode (Protected, another)",
       "request": {
         "method": "DELETE",
         "header": [
